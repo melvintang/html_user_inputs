@@ -23,40 +23,55 @@ you're taking. This list is for all students. Please tell us what
 city you're in and whether you're taking the Immersive User Experience (UX)
 course or the Immersive Web Development course.</p>
 
-<form>
-  <label for="city">City:</label>
+<form action="success.html" method="get">
+  <label for="city">City:
   <select name="select-box">
-    <option value="Hong Kong">Hong Kong</option>
-    <option value="London">London</option>
-    <option value="Los Angeles">Los Angeles</option>
-    <option value="New York">New York</option>
-    <option value="Portland">Portland</option>
-    <option value="San Francisco">San Francisco</option>
-    <option value="Seattle">Seattle</option>
-    <option value="Singapore">Singapore</option>
+    <option value="hongkong">Hong Kong</option>
+    <option value="london">London</option>
+    <option value="losangeles">Los Angeles</option>
+    <option value="newyork">New York</option>
+    <option value="portland">Portland</option>
+    <option value="sanfrancisco">San Francisco</option>
+    <option value="seattle">Seattle</option>
+    <option value="singapore">Singapore</option>
   </select>
+  </label>
+
   <br><br>
   <label for="Course">Course:</label>
     <input type="radio" name="UX" value="UX">
-    UX</label>
+    UX
+  </label>
+
   <label>
     <input type="radio" name="Web Dev" value="Web Dev" checked>
-    Web Dev</label>
+    Web Dev
+  </label>
 
   <br><br>
+
   <label for="name-field">Name</label>
       <input id="name-field" name="nameField" type="text" value="">
+
   <br><br>
+
+
   <label for="name-field">Email</label>
       <input id="email-field" name="nameField" type="text" value="">
+
   <br><br>
+
   <label for="name-field">Password</label>
-      <input id="password-field" name="password" type="text" value="">
+      <input id="password-field" name="password" type="password" value="">
   </form>
+
   <br><br>
+
   <label>
     <input type="checkbox" name="option" value="Y"checked>
     Yes, subscribe me to the General Assembly student newsletter
   </label>
+
   <br><br>
-  <button type="button" name="subscribe">Subscribe</button>
+  
+  <input type="button" onClick = "parent.location='success.html'" value="Subscribe">
